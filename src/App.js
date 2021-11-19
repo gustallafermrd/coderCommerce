@@ -1,6 +1,12 @@
 
 import './App.css';
-import  Menu from './components/NavBar';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import  Menu from './components/NavBar'
+import  ItemList from './components/ItemListContainer'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+library.add(fab, faShoppingCart)
 
 function App() {
   return (
@@ -8,7 +14,7 @@ function App() {
       <header className="App-header">
         <Menu />
       </header>
-      
+      <ItemList />
     </div>
   );
 }
